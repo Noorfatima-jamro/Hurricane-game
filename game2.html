@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurricane Quiz Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hurricane Quiz Game</h1>
+        <div id="quiz-container">
+            <div id="question"></div>
+            <div class="options">
+                <button class="option" onclick="checkAnswer(0)">Option 1</button>
+                <button class="option" onclick="checkAnswer(1)">Option 2</button>
+                <button class="option" onclick="checkAnswer(2)">Option 3</button>
+                <button class="option" onclick="checkAnswer(3)">Option 4</button>
+            </div>
+            <div class="lifelines">
+                <button onclick="lifeline50_50()">50/50 Lifeline</button>
+                <button onclick="lifelineAskAudience()">Ask the Audience</button>
+            </div>
+        </div>
+        <div id="result"></div>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
